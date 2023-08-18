@@ -20,6 +20,25 @@ SecureGuard RFID Protection is a versatile and customizable security system desi
 - Buzzer (for alarms)
 - Light Sensor (optional, for ambient light detection)
 
+## Modules and Functionality
+
+The SecureGuard RFID Protection project consists of the following modules and functionality:
+
+- `Alerts`: Provides functions to trigger various types of alerts, such as unauthorized card detection and locking/unlocking sounds.
+
+- `ServerFunctions`: Implements the web server functionality for the control panel, event logging, and configuration settings.
+
+- `Board`: Contains functions for initializing and managing the hardware components of the board.
+
+- `Config`: Handles configuration settings, including mode of operation and threshold values for event detection.
+
+- `Main`: The main application file that orchestrates the overall system functionality.
+
+- Interfacing with MPU6050 for accelerometer and gyro sensor data.
+- Battery status read via analog pin A0.
+- Interfacing of the MFRC522 RFID reader via SPI.
+- Support for MIFARE 1k cards and tags.
+
 ## Getting Started
 
 Follow the detailed [Setup Guide](/setup-guide.md) to set up and configure the SecureGuard RFID Protection system. The guide provides step-by-step instructions, circuit diagrams, and tips for customizing the system according to your needs.
@@ -28,9 +47,25 @@ Follow the detailed [Setup Guide](/setup-guide.md) to set up and configure the S
 
 Once the system is set up, you can easily control and monitor your SecureGuard device using the web-based control panel. Access the control panel by connecting to the device's WiFi network and visiting the provided IP address.
 
-## Pro Version
+## TODO List
 
-Upgrade to the Pro version for enhanced security and convenience. The Pro version introduces BLE-based locking/unlocking, allowing you to use a mobile app or a physical BLE tag as a key.
+- [ ] Implement battery status monitoring.
+- [ ] Enhance event logging with more details.
+- [ ] Integrate BLE-based locking/unlocking in Pro version.
+- [ ] Add support for LDR ambient light detection.
+- [ ] Further optimize event detection algorithms.
+- [ ] Enhance user interface for the control panel.
+- [ ] Expand documentation and examples.
+
+## Building on PlatformIO
+
+To build and upload the SecureGuard RFID Protection project using PlatformIO:
+
+1. Clone this repository to your local machine.
+2. Open the project in PlatformIO IDE.
+3. Compile and upload the project to your hardware.
+
+Refer to the [PlatformIO documentation](https://docs.platformio.org/en/latest/) for more details on using PlatformIO.
 
 ## Contributors
 
